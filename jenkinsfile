@@ -9,7 +9,7 @@ pipeline {
             steps {
                 git 'https://github.com/nirkoren/devopscon.git'
                 //sh "mvn clean install -Pci"
-                bat "%MVN_HOME%\bin\mvn clean install -Pci"
+                bat "mvn clean install -Pci"
             }
             post {
                 success {
